@@ -347,7 +347,7 @@ img {
 }
 .content .me-card {
   width: fit-content;
-  min-width: 285px;
+  min-width: 2px;
   transform: translateY(-351px);
   height: 780px;
   /* backgrounbad-color: var(--headerCOlor); */
