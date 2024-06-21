@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
@@ -23,6 +24,24 @@
 
 <canvas class="canvas-wrap" id="triangle-lost-in-space" resize="true"></canvas>
 
+<!-- loadding -->
+<div class="lodding-wrap">
+  <div class="loadding-div"></div>
+</div>
+<!-- 遮罩层 -->
+<div class="zhezhao" id="zhezhao">
+    <span class="close"><svg t="1649229755294" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="4692" width="32" height="32">
+        <path
+                d="M512 0C229.187368 0 0 229.187368 0 512 0 794.812632 229.187368 1024 512 1024 794.812632 1024 1024 794.812632 1024 512 1024 229.187368 794.812632 0 512 0ZM512 970.105263C259.368421 970.105263 53.894737 764.631579 53.894737 512 53.894737 259.368421 259.368421 53.894737 512 53.894737 764.631579 53.894737 970.105263 259.368421 970.105263 512 970.105263 764.631579 764.631579 970.105263 512 970.105263ZM550.130526 512 719.629474 342.366316C730.273684 331.856842 730.273684 314.88 719.629474 304.370526 709.12 293.726316 692.143158 293.726316 681.633684 304.370526L512 473.869474 342.366316 304.370526C331.856842 293.726316 314.88 293.726316 304.370526 304.370526 293.726316 314.88 293.726316 331.856842 304.370526 342.366316L473.869474 512 304.370526 681.633684C293.726316 692.143158 293.726316 709.12 304.370526 719.629474 309.625263 724.884211 316.496842 727.578947 323.368421 727.578947 330.24 727.578947 337.111579 724.884211 342.366316 719.629474L512 550.130526 681.633684 719.629474C686.888421 724.884211 693.76 727.578947 700.631579 727.578947 707.503158 727.578947 714.374737 724.884211 719.629474 719.629474 730.273684 709.12 730.273684 692.143158 719.629474 681.633684L550.130526 512Z"
+                p-id="4693"></path>
+      </svg></span>
+  <div id="videoResume">
+    <video id="videoResumeC" controls="" name="media">
+      <source src="./img/Elaina.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
 
 <!-- 主要页面 -->
 <div class="box">
@@ -82,6 +101,33 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- 顶部导航 -->
+  <div class="navigation">
+    <div class="nav-titleBox co zz">
+      <!-- 占位符 -->
+      <div class="co-left"></div>
+
+      <!-- 标题 -->
+      <div class="co-right ">
+        <span class="titleBox-tag">ElainaMod</span>
+        <h1>
+          ElainaMod<br>
+          尚未完工的工程
+        </h1>
+        <a class="buttom navbtn" target="_blank" href="https://github.com/ShicyAElaina/ElainaMod">git项目链接
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- 主要内容 -->
+  <div class="container content zz">
+
     <!-- 占位符 -->
     <div class="co-left">
       <!-- 简历吸盘 -->
@@ -127,7 +173,7 @@
                       p-id="17272"></path>
             </svg>
           </a>
-          <a title="QQ:1457321681">
+          <a title="QQ:不告诉你">
             <svg t="1649146096754" class="icon" viewBox="0 0 1024 1024" version="1.1"
                  xmlns="http://www.w3.org/2000/svg" p-id="18277" width="15" height="15">
               <path
@@ -158,9 +204,323 @@
         </div>
       </div>
     </div>
+    <!-- 右边 -->
+    <div class="co-right" id="next-one">
+      <!-- 完成项目 -->
+      <div class="content-li li1">
+        <div class="li1-box borderbefore">
+          <span>贡献者</span>
+          <div class="borderbotm"></div>
+          <p><a target="_blank" href="https://space.bilibili.com/519088494">伊蕾娜教代行教皇</a></p>
+          <p>提供了伊蕾娜模型</p>
+        </div>
+        <div class="li1-box borderbefore">
+          <span><a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/elainamod">下载</a> </span>
+          <div class="borderbotm">
+            <p>curseforge</p>
+          </div>
+        </div>
+        <div class="li1-box borderbefore">
+          <span>源代码</span>
+          <div class="borderbotm"></div>
+          <p><a target="_blank" href="https://github.com/ShicyAElaina/ElainaMod">github-1</a></p>
+        </div>
+      </div>
+      <div class="content-li li2">
+        <h3>
+          <span>主要内容</span>
+          <div class="borderbotm"></div>
+          <span>01</span>
+        </h3>
+        <div class="carbox li2-box">
+          <blockquote>
+            以geo和curios为前置,拥有伊蕾娜模型，可颂面包，以及艾姆妮西亚的佩剑
+          </blockquote>
+        </div>
+      </div>
+      <div class="content-li li3">
+        <h3>
+          <span>Elaina</span>
+          <div class="borderbotm"></div>
+          <span>02</span>
+        </h3>
+        <div class="carbox li3-box">
+          <div class="play-buttom" id="playbuttom">
+
+              <span><svg t="1649146869552" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="20204" width="50" height="50">
+                  <path d="M657.92 535.04l-256-160v320z" p-id="20205" data-spm-anchor-id="a313x.7781069.0.i27"
+                        class="selected" fill="#ffffff"></path>
+                </svg></span>
+          </div>
+        </div>
+      </div>
+      <div class="content-li li4">
+        <h3>
+          <span>Minecraft</span>
+          <div class="borderbotm"></div>
+          <span>03</span>
+        </h3>
+        <div class="li4-box">
+          <div class="carbox">
+            <svg t="1649230330671" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="1638" width="40" height="40">
+              <path
+                      d="M488.96 506.88h40.96v307.2h-40.96zM803.84 737.28h-97.28c-45.056 0-81.92-36.864-81.92-81.92V502.272h40.96V655.36c0 22.528 18.432 40.96 40.96 40.96h97.28v40.96zM312.32 737.28H215.04v-40.96h97.28c22.528 0 40.96-18.432 40.96-40.96V502.272h40.96V655.36c0 45.056-36.864 81.92-81.92 81.92z"
+                      fill="#254665" p-id="1639"></path>
+              <path
+                      d="M509.44 942.08c-46.592 0-84.48-37.888-84.48-84.48S462.848 773.12 509.44 773.12s84.48 37.888 84.48 84.48-37.888 84.48-84.48 84.48z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52zM171.52 798.72c-46.592 0-84.48-37.888-84.48-84.48S124.928 629.76 171.52 629.76 256 667.648 256 714.24 218.112 798.72 171.52 798.72z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52zM847.36 798.72c-46.592 0-84.48-37.888-84.48-84.48s37.888-84.48 84.48-84.48 84.48 37.888 84.48 84.48-37.888 84.48-84.48 84.48z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52z"
+                      fill="#254665" p-id="1640"></path>
+              <path
+                      d="M683.52 543.232H319.488c-90.112 0-163.328-73.216-163.328-163.328 0-90.112 73.216-163.328 163.328-163.328h7.68C344.064 138.752 413.696 81.92 495.616 81.92c69.632 0 132.608 42.496 159.232 105.472 9.728-1.536 19.456-2.56 29.184-2.56 98.816 0 179.2 80.384 179.2 179.2-0.512 98.816-80.896 179.2-179.712 179.2zM319.488 258.048c-67.584 0-122.368 54.784-122.368 122.368s54.784 122.368 122.368 122.368h364.544c76.288 0 138.24-61.952 138.24-138.24s-61.952-138.24-138.24-138.24c-12.288 0-24.576 1.536-36.864 5.12l-19.456 5.12-5.632-18.944C605.696 161.792 553.472 122.88 495.616 122.88c-68.096 0-124.416 51.2-131.584 118.784l-2.048 22.016-21.504-3.584c-7.168-1.536-14.336-2.048-20.992-2.048z"
+                      fill="#254665" p-id="1641"></path>
+              <path
+                      d="M655.36 640H307.2V424.96c0-33.792 27.648-61.44 61.44-61.44h348.16v215.04c0 33.792-27.648 61.44-61.44 61.44z"
+                      fill="#254665" opacity=".18" p-id="1642"></path>
+            </svg>
+            <h4>ElainaMod</h4>
+            <p>
+              Elaina<br>
+              可颂面包<br>
+              Painting<br>
+            </p>
+            <a target="_blank" href="ElainaMod.html">关于</a>
+          </div>
+          <div class="carbox">
+            <svg t="1649230368898" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="1847" width="40" height="40">
+              <path
+                      d="M153.6 460.8h-40.96V179.2c0-45.056 34.816-81.92 78.336-81.92H921.6v230.4h-40.96V138.24H190.976c-20.48 0-37.376 18.432-37.376 40.96v281.6zM843.776 783.36H112.64v-216.064h40.96V742.4h690.176c20.48 0 37.376-18.432 37.376-40.96v-141.824h40.96V701.44c-0.512 45.056-35.328 81.92-78.336 81.92zM220.16 885.76h593.92v40.96H220.16z"
+                      fill="#333333" p-id="1848"></path>
+              <path
+                      d="M418.304 388.096l17.408 83.968 27.648-83.968H481.28l24.576 82.432 16.384-82.432h36.864l-27.648 130.048h-39.424L470.528 455.68 450.56 518.144h-39.424l-29.696-130.048h36.864zM611.328 388.096l17.408 83.968 27.648-83.968h17.92l24.576 82.432 16.384-82.432h36.864l-27.648 130.048h-39.424L663.552 455.68l-19.968 62.464H604.16l-29.696-130.048h36.864zM804.352 388.096l17.408 83.968 27.648-83.968h17.92l24.576 82.432 16.384-82.432h36.864l-27.648 130.048h-39.424L856.576 455.68l-19.968 62.464h-39.424l-29.696-130.048h36.864z"
+                      fill="#EB4446" p-id="1849"></path>
+              <path
+                      d="M839.168 445.44h-512V179.2c0-33.792 27.648-61.44 61.44-61.44h512v266.24c0 33.792-27.648 61.44-61.44 61.44z"
+                      fill="#333333" opacity=".18" p-id="1850"></path>
+              <path d="M496.64 762.88h40.96v143.36h-40.96z" fill="#333333" p-id="1851"></path>
+            </svg>
+            <h4>网页制作</h4>
+            <p>
+              HTML、JS、css、scss<br>
+              JS交互<br>
+              AJAX数据渲染<br>
+            </p>
+            <a>ORDER NOW</a>
+          </div>
+          <div class="carbox">
+            <svg t="1649230380175" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="2002" width="40" height="40">
+              <path
+                      d="M738.304 689.664h-59.392v-40.96h59.392c89.6 0 162.816-74.24 162.816-164.864 0-91.136-73.216-164.864-162.816-164.864-9.216 0-18.944 1.024-28.16 2.56l-21.504 3.584-2.048-22.016C677.376 211.968 602.112 143.36 512 143.36c-90.624 0-165.888 68.608-175.104 159.744l-2.048 22.016-21.504-3.584c-9.216-1.536-18.432-2.56-28.16-2.56-89.6 0-162.816 74.24-162.816 164.864 0 91.136 73.216 164.864 162.816 164.864h59.904v40.96H285.184c-112.128 0-203.776-92.672-203.776-205.824s91.136-205.824 203.776-205.824c4.608 0 9.728 0 14.336 0.512C319.488 176.64 407.04 102.4 511.488 102.4c104.96 0 192.512 74.24 212.48 175.616 4.608-0.512 9.216-0.512 14.336-0.512 112.128 0 203.776 92.672 203.776 205.824s-91.136 206.336-203.776 206.336z"
+                      fill="#333333" p-id="2003"></path>
+              <path d="M574.464 679.936L512 617.984l-62.464 61.952-28.672-28.672 91.136-91.648 91.136 91.648z"
+                    fill="#EB4446" p-id="2004"></path>
+              <path d="M491.52 614.4h40.96v171.52h-40.96z" fill="#EB4446" p-id="2005"></path>
+              <path
+                      d="M512 928.768c-3.584 0-7.68-1.024-10.752-3.072l-187.392-119.296c-6.144-3.584-9.728-10.24-9.728-17.408v-239.104c0-7.168 3.584-13.312 9.728-17.408l187.392-119.296c6.656-4.096 15.36-4.096 22.016 0l187.392 119.296c6.144 3.584 9.728 10.24 9.728 17.408V788.48c0 7.168-3.584 13.312-9.728 17.408l-187.392 119.296c-3.584 2.56-7.68 3.584-11.264 3.584z m-166.912-151.552l166.912 106.496 166.912-106.496v-216.576L512 454.656l-166.912 106.496v216.064z m354.304 11.264z"
+                      fill="#333333" p-id="2006"></path>
+              <path
+                      d="M675.84 675.84H286.72V409.6c0-33.792 27.648-61.44 61.44-61.44h389.12v266.24c0 33.792-27.648 61.44-61.44 61.44z"
+                      fill="#333333" opacity=".18" p-id="2007"></path>
+            </svg>
+            <h4>前端</h4>
+            <p>
+              vue框架<br>
+              UI框架<br>
+              uniapp小程序
+            </p>
+            <a>ORDER NOW</a>
+          </div>
+          <div class="carbox">
+            <svg t="1649230391217" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="2160" width="40" height="40">
+              <path
+                      d="M512 942.08c-99.328 0-174.08-184.832-174.08-430.08s74.752-430.08 174.08-430.08 174.08 184.832 174.08 430.08-74.752 430.08-174.08 430.08z m0-819.2c-62.976 0-133.12 159.744-133.12 389.12s70.144 389.12 133.12 389.12 133.12-159.744 133.12-389.12-70.144-389.12-133.12-389.12z"
+                      fill="#333333" p-id="2161"></path>
+              <path d="M102.4 491.52h814.592v40.96H102.4z" fill="#EB4446" p-id="2162"></path>
+              <path
+                      d="M512 942.08c-85.504 0-167.936-25.088-239.104-72.192l22.528-33.792C359.936 878.592 434.688 901.12 512 901.12c214.528 0 389.12-174.592 389.12-389.12s-174.592-389.12-389.12-389.12-389.12 174.592-389.12 389.12c0 82.944 25.6 161.792 74.24 228.864l-33.28 24.064C110.08 691.2 81.92 603.648 81.92 512c0-237.056 193.024-430.08 430.08-430.08s430.08 193.024 430.08 430.08-193.024 430.08-430.08 430.08z"
+                      fill="#333333" p-id="2163"></path>
+              <path
+                      d="M860.16 793.6H419.84V496.64c0-33.792 27.648-61.44 61.44-61.44h440.32v296.96c0 33.792-27.648 61.44-61.44 61.44z"
+                      fill="#333333" opacity=".18" p-id="2164"></path>
+            </svg>
+            <h4>后端</h4>
+            <p>
+              nodjes+express+mysql<br>
+              koa<br>
+              socket<br>
+            </p>
+            <a>ORDER NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 我的期望薪资 (新加) -->
+      <div class="content-li li7">
+        <h3>
+          <span>期望薪资</span>
+          <div class="borderbotm"></div>
+          <span>04</span>
+        </h3>
+        <div class="li7-box">
+          <div class="carbox li7boxitem active">
+            <div>
+              <h3>兼职</h3>
+              <div class="item-price">
+                <sub>￥</sub>
+                20
+                <sub>h</sub>
+              </div>
+            </div>
+            <div class="borderbotm"></div>
+            <p>HTML+CSS+JS案例.</p>
+            <p>静态/动态网站.</p>
+            <p>uniapp小程序.</p>
+            <p class="throughline">毕业论文.</p>
+            <button class="buttonsty">聘用</button>
+          </div>
+          <div class="carbox li7boxitem">
+            <div>
+              <h3>全职</h3>
+              <div class="item-price">
+                <sub>￥</sub>
+                5000
+                <sub>M</sub>
+              </div>
+            </div>
+            <div class="borderbotm"></div>
+            <p>web网站.</p>
+            <p>vue、uniapp.</p>
+            <p>nodejs+koa+mysql</p>
+            <p class="throughline">毕业论文.</p>
+            <button class="buttonsty">聘用</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 我的专业教室 -->
+      <div class="content-li li5">
+        <h3>
+          <span>我的专业教师</span>
+          <div class="borderbotm"></div>
+          <span>05</span>
+        </h3>
+        <div class="li5-box">
+          <div class="left buttonsty" id="leftimg">
+              <span>
+                <svg t="1649148549783" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="22757" width="25" height="25">
+                  <path
+                          d="M325.399273 235.124364L600.157091 488.727273 325.399273 742.353455a34.909091 34.909091 0 1 0 47.36 51.316363l302.545454-279.272727a34.909091 34.909091 0 0 0 0-51.316364l-302.545454-279.272727a34.909091 34.909091 0 1 0-47.36 51.316364"
+                          fill="#ffffff" p-id="22758" data-spm-anchor-id="a313x.7781069.0.i41" class="selected"></path>
+                </svg>
+              </span>
+          </div>
+          <div class="right buttonsty" id="rightimg">
+              <span>
+                <svg t="1649148517782" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="21306" width="25" height="25">
+                  <path
+                          d="M675.328 765.626182L400.570182 512l274.757818-253.626182a34.909091 34.909091 0 1 0-47.36-51.316363l-302.545455 279.272727a34.909091 34.909091 0 0 0 0 51.316363l302.545455 279.272728a34.909091 34.909091 0 1 0 47.36-51.316364"
+                          fill="#ffffff" p-id="21307" data-spm-anchor-id="a313x.7781069.0.i34" class="selected"></path>
+                </svg>
+
+
+              </span></div>
+
+          <div class="li5box-ul" id="li5boxul">
+            <div class="li5box-car carbox">
+              <img src="./img/toux.jpg" alt="">
+              <h3>张老师</h3>
+              <span>Android</span>
+              <p>
+                我业精于勤而荒于嬉，行成于思而毁于随。
+              </p>
+            </div>
+            <div class="li5box-car carbox">
+              <img src="./img/toux.jpg" alt="">
+              <h3>史老师</h3>
+              <span>web前端开发</span>
+              <p>
+                青，取之于蓝而青于蓝;
+                冰，水为之而寒于水。
+              </p>
+            </div>
+            <div class="li5box-car carbox">
+              <img src="./img/toux.jpg" alt="">
+              <h3>杜老师</h3>
+              <span>javaweb</span>
+              <p>
+                有志者事竟成。
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- 最近完成 -->
+      <div class="content-li li6">
+        <h3>
+            <span>最近完成的案例
+            </span>
+          <div class="borderbotm"></div>
+          <span>06</span>
+        </h3>
+        <div class="li6-box">
+          <div class="carbox">
+            <a class="imgbox" href="http://123.56.144.92/nav/index.html">
+              <img src=" ./img/project/daohanglan.png" alt="">
+            </a>
+            <div class="li6car-title">
+              导航栏:基本实现:ul/li/a:hover
+              <br><br>2022.03.25
+              <div class="borderbotm"></div>
+              <a href="http://123.56.144.92/nav/index.html">进入浏览</a>
+            </div>
+          </div>
+          <div class=" carbox">
+            <a class="imgbox" href="http://123.56.144.92/hualang/index.html">
+              <img src="./img/project/hualang.png" alt="">
+            </a>
+            <div class="li6car-title">
+              画廊海报：基本实现:iframe/a/marquee
+              <br><br>2022.03.18
+              <div class="borderbotm"></div>
+              <a href="http://123.56.144.92/hualang/index.html">进入浏览</a>
+            </div>
+          </div>
+          <div class="carbox">
+            <a class="imgbox" href="http://123.56.144.92/jianli/index.html">
+              <img src="./img/project/jianli.png" alt="">
+            </a>
+            <div class="li6car-title">
+              个人简历:animation+粒子
+              <br><br>2022.03.10
+              <div class="borderbotm"></div>
+              <a href="http://123.56.144.92/jianli/index.html">进入浏览</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="borderbotm"></div>
+      <!-- 底部 -->
+      <div class="carbox copybottm">
+        ©2022 wttandroid
+      </div>
+    </div>
+    <div class="left">
+    </div>
+
   </div>
 </div>
 </body>
-
+<script type="text/javascript" src="./js/paper-full.min.js"></script>
+<script type="text/javascript" src="./js/canvas.js"></script>
 <script src="./js/base.js"></script>
+<script src="./js/index1.js"></script>
+
+
 </html>
