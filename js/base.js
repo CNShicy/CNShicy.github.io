@@ -148,3 +148,17 @@ $('#minmenu').click(function () {
               })
             }
 })()
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault(); // 阻止默认的右键菜单
+  var customMenu = document.getElementById('customContextMenu');
+  customMenu.style.display = 'block';
+  customMenu.style.left = e.pageX + 'px';
+  customMenu.style.top = e.pageY + 'px';
+}, false);
+
+// 点击空白处隐藏自定义菜单
+window.addEventListener('click', function() {
+  var customMenu = document.getElementById('customContextMenu');
+  customMenu.style.display = 'none';
+}, false);
