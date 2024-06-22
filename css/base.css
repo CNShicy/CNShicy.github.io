@@ -852,7 +852,15 @@ img {
 #customContextMenu a:hover {
   background-color: #e0e0e0;
 }
-
+.follow-mouse {
+  position: absolute;
+  width: 50px; /* 根据图片大小调整 */
+  height: 50px; /* 根据图片大小调整 */
+  background-image: url('img/sb.png'); /* 替换为你的图片路径 */
+  background-size: cover; /* 确保图片覆盖整个挂件 */
+  border-radius: 50%; /* 使挂件成为圆形 */
+  pointer-events: none; /* 确保挂件不会干扰鼠标事件 */
+}
 
 
 

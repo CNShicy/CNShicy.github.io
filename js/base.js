@@ -162,3 +162,13 @@ window.addEventListener('click', function() {
   var customMenu = document.getElementById('customContextMenu');
   customMenu.style.display = 'none';
 }, false);
+
+// 获取挂件元素
+var followMouse = document.querySelector('.follow-mouse');
+
+// 监听鼠标移动事件
+document.addEventListener('mousemove', function(e) {
+  // 设置挂件的位置为鼠标位置
+  followMouse.style.left = e.pageX + 'px';
+  followMouse.style.top = e.pageY + 'px';
+});
