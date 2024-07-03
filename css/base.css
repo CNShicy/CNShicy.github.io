@@ -852,3 +852,16 @@ img {
 #customContextMenu a:hover {
   background-color: #e0e0e0;
 }
+
+.text-w {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.text-w:hover {
+  color: white; /* 鼠标悬停时文字颜色变为白色 */
+}
