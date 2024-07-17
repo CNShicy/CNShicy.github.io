@@ -163,3 +163,47 @@ window.addEventListener('click', function() {
   customMenu.style.display = 'none';
 }, false);
 
+function openLinksModal() {
+  // 创建弹窗内容
+  var modalContent = document.createElement('div');
+  modalContent.className = 'modal-content';
+  modalContent.innerHTML = `
+        <a href="#" onclick="openLink('https://www.mcmod.cn/class/15446.html')">mc百科</a><br>
+        <a href="#" onclick="openLink('https://www.curseforge.com/minecraft/mc-mods/elainalike')">curseforge</a><br>
+        <a href="#" onclick="openLink('https://modrinth.com/mod/elainalike')">Modrinth</a><br>
+        <button onclick="closeModal()">关闭</button>
+    `;
+
+  // 创建弹窗背景
+  var modalBackground = document.createElement('div');
+  modalBackground.style.position = 'fixed';
+  modalBackground.style.top = '0';
+  modalBackground.style.left = '0';
+  modalBackground.style.width = '100%';
+  modalBackground.style.height = '100%';
+  modalBackground.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  modalBackground.style.zIndex = '1000';
+  modalBackground.style.display = 'none';
+  modalBackground.appendChild(modalContent);
+
+  // 将弹窗背景添加到body中
+  document.body.appendChild(modalBackground);
+
+  // 显示弹窗
+  modalBackground.style.display = 'block';
+}
+
+function openLink(url) {
+  // 打开链接
+  window.open(url, '_blank');
+  // 关闭弹窗
+  closeModal();
+}
+
+function closeModal() {
+  // 找到弹窗背景并移除
+  var modalBackground = document.querySelector('div[style*="position: fixed"]');
+  if (modalBackground) {
+    modalBackground.parentNode.removeChild(modalBackground);
+  }
+}

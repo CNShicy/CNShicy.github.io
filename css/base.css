@@ -865,3 +865,13 @@ img {
 .text-w:hover {
   color: white; /* 鼠标悬停时文字颜色变为白色 */
 }
+abbr {
+  text-decoration: none; /* 移除下划线 */
+  color: blue; /* 设置文字颜色 */
+  cursor: pointer; /* 设置鼠标悬停时的指针形状为指针，表示可点击 */
+}
+
+abbr:hover {
+  text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+
